@@ -7,39 +7,53 @@ users:
   #单个用户配置
   - user:
       #username 学号或者工号
-      username: '161105024'
+      username: '206180428'
       #password 密码
-      password: '161105024'
+      password: '2018lmy351.'
       #address 地址，定位信息  中国河南省xx市xx区xx路
-      address: 中国河南省
+      address: 中国江苏省
       #email 接受通知消息的邮箱
-      email: 461009747@qq.com
+      email: 736423189@qq.com
       #school 学校全称
-      school: 新乡医学院
+      school: 南京工程学院
       #lon 经度
-      lon: '114.639377'
+      lon: '118.881984'
       #lat 纬度
-      lat: '32.958833'
+      lat: '31.927143'
       #abnormalReason 反馈信息
       abnormalReason: 在家
-      #photo 签到照片，不需要可不填，或者直接删除
-      photo: default.png
   #多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
 #今日校园相关配置
 cpdaily:
   #是否检查问题,true检查，false不检查
-  check: false
-  #附加信息组默认选项配置，没有可留空
-  defaults:
+  check: true
   #附加信息组默认选项配置，按顺序，可留空
-  #    - default:
-  #        #表单项标题
-  #        title: 体温
-  #        #表单项默认值
-  #        value: 正常
+  default 1:
+  #表单项标题
+  title:  你的体温情况（必填）
+  #表单项默认值
+  value:  37.2℃及以下
   #多个额外选项配置
-#    - default:
-#        #表单项标题
-#        title: 体温
-#        #表单项默认值
-#        value: 正常
+  default 2:
+  #表单项标题
+  title: 你的健康状况（必填）
+  #表单项默认值
+  value: 健康
+  #多个额外选项配置
+  default 3:
+  #表单项标题
+  title: 近14天你或你的同住人是否有疫情中、高风险区域行程史（必填）
+  #表单项默认值
+  value: 否
+  #多个额外选项配置
+  default 4:
+  #表单项标题
+  title: 你或你的同住人目前是否被医学隔离（必填）
+  #表单项默认值
+  value: 否
+  #多个额外选项配置
+  default 5:
+  #表单项标题
+  title: 你的当地健康码颜色是（请谨慎如实填写）（必填）
+  #表单项默认值
+  value: 绿色
